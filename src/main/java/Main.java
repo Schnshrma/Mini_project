@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         System.out.println("Hello ..!");
         System.out.println("MINI PROJECT - CALCULATOR..!");
         Scanner reader = new Scanner(System.in);
         System.out.print("Enter two numbers: ");
 
-        // nextDouble() reads the next double from the keyboard
         double first = reader.nextDouble();
         double second = reader.nextDouble();
 
@@ -35,11 +34,11 @@ public class main {
 
             // operator doesn't match any case constant (+, -, *, /)
             default:
-                System.out.printf("Error! operator is not correct");
+                System.out.println("Error! operator is not correct");
                 return;
         }
 
         System.out.println(first + " " + operator + " " + second + " = " + result);
     }
     }
-}
+
