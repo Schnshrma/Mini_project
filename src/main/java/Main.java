@@ -1,44 +1,62 @@
 import java.util.Scanner;
 
 public class Main {
+    static int factorial(int n) {
+        if (n == 0)
+            return 1;
+        else
+            return (n * factorial(n - 1));
+    }
+
     public static void main(String[] args) {
         System.out.println("Hello ..!");
         System.out.println("MINI PROJECT - CALCULATOR..!");
         Scanner reader = new Scanner(System.in);
-        System.out.print("Enter two numbers: ");
+        while (true) {
+            System.out.println("WELCOME..!");
+            System.out.print("Enter the operation Serial number :\n 1.sqrt \n 2.fact \n3.log \n4.pow\n5.exit");
+            int operator = reader.nextInt();
 
-        double first = reader.nextDouble();
-        double second = reader.nextDouble();
+            double result;
 
-        System.out.print("Enter an operator (+, -, *, /): ");
-        char operator = reader.next().charAt(0);
+            switch (operator) {
+                case 1:
+                    System.out.print("Enter the number for square root : ");
+                    double first = reader.nextDouble();
+                    result = Math.sqrt(first);
+                    System.out.println(" Square root of " + first + " = " + result);
+                    break;
 
-        double result;
+                case 2:
+                    System.out.print("Enter the number for factorial : ");
+                    int first1 = reader.nextInt();
+                    result = factorial(first1);
+                    System.out.println(" Factorial of " + first1 + " = " + result);
+                    break;
 
-        switch (operator) {
-            case '+':
-                result = first + second;
-                break;
+                case 3:
+                    System.out.print("Enter the number for Log : ");
+                    double first2 = reader.nextDouble();
+                    result = Math.log(first2);
+                    System.out.println(" Log of " + first2 + " = " + result);
+                    break;
 
-            case '-':
-                result = first - second;
-                break;
-
-            case '*':
-                result = first * second;
-                break;
-
-            case '/':
-                result = first / second;
-                break;
-
-            // operator doesn't match any case constant (+, -, *, /)
-            default:
-                System.out.println("Error! operator is not correct");
-                return;
+                case 4:
+                    System.out.print("Enter number for A^B : \n");
+                    System.out.print("Enter A : ");
+                    double firstA = reader.nextDouble();
+                    System.out.print("Enter B : ");
+                    double firstB = reader.nextDouble();
+                    result = Math.pow(firstA, firstB);
+                    System.out.println("\n " + firstA + " ^ " + firstB + " = " + result);
+                    break;
+                case 5:
+                    return;
+                default:
+                    System.out.println("Error! operator is not correct");
+            }
         }
 
-        System.out.println(first + " " + operator + " " + second + " = " + result);
     }
-    }
+}
 
