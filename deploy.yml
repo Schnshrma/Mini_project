@@ -6,8 +6,3 @@
       docker_image:
         name:schnshrma01/spe-calculator
         source: pull
-    - name: Create default containers
-      docker_container:
-        name: c1
-        image: schnshrma01/spe-calculator
-        state: present
