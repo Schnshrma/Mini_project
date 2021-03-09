@@ -11,4 +11,3 @@
         name: c1
         image: schnshrma01/spe-calculator
         state: present
-
