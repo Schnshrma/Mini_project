@@ -18,7 +18,7 @@ public class Main {
         Scanner reader = new Scanner(System.in);
         while (true) {
             System.out.println("WELCOME..!");
-            System.out.print("Enter the operation Serial number :\n1.sqrt \n2.fact \n3.log \n4.pow\n5.exit");
+            System.out.print("Enter the operation Serial number :\n1.sqrt \n2.fact \n3.log \n4.pow\n5.exit\n");
             int operator = reader.nextInt();
 
             double result;
@@ -28,21 +28,21 @@ public class Main {
                     System.out.print("Enter the number for square root : ");
                     double first = reader.nextDouble();
                     result = Math.sqrt(first);
-                    System.out.println(" Square root of " + first + " = " + result);
+                    System.out.println(" \n\n\n\nSquare root of " + first + " = " + result+"\n\n\n\n");
                     break;
 
                 case 2:
                     System.out.print("Enter the number for factorial : ");
                     int first1 = reader.nextInt();
                     result = factorial(first1);
-                    System.out.println(" Factorial of " + first1 + " = " + result);
+                    System.out.println(" \n\n\n\nFactorial of " + first1 + " = " + result+"\n\n\n\n");
                     break;
 
                 case 3:
                     System.out.print("Enter the number for Log : ");
                     double first2 = reader.nextDouble();
                     result = Math.log(first2);
-                    System.out.println(" Log of " + first2 + " = " + result);
+                    System.out.println(" \n\n\n\nLog of " + first2 + " = " + result+"\n\n\n\n");
                     break;
 
                 case 4:
@@ -52,13 +52,13 @@ public class Main {
                     System.out.print("Enter B : ");
                     double firstB = reader.nextDouble();
                     result = Math.pow(firstA, firstB);
-                    System.out.println("\n " + firstA + " ^ " + firstB + " = " + result);
+                    System.out.println("\n\n\n\n" + firstA + " ^ " + firstB + " = " + result+"\n\n\n\n");
                     break;
                 case 5:
-                    System.out.println("Thank-You..!!");
+                    System.out.println("\n\n\n\nThank-You..!!\n\n\n\n");
                     return;
                 default:
-                    System.out.println("Error! operator is not correct");
+                    System.out.println("\n\n\n\nError! operator is not correct ..!! \n Try again ..!!\n\n\n\n");
             }
 
         }
