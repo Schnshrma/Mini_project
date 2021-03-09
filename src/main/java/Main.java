@@ -9,12 +9,16 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
         System.out.println("Hello ..!");
         System.out.println("MINI PROJECT - CALCULATOR..!");
         Scanner reader = new Scanner(System.in);
         while (true) {
             System.out.println("WELCOME..!");
-            System.out.print("Enter the operation Serial number :\n 1.sqrt \n 2.fact \n3.log \n4.pow\n5.exit");
+            System.out.print("Enter the operation Serial number :\n1.sqrt \n2.fact \n3.log \n4.pow\n5.exit");
             int operator = reader.nextInt();
 
             double result;
@@ -51,10 +55,12 @@ public class Main {
                     System.out.println("\n " + firstA + " ^ " + firstB + " = " + result);
                     break;
                 case 5:
+                    System.out.println("Thank-You..!!");
                     return;
                 default:
                     System.out.println("Error! operator is not correct");
             }
+
         }
 
     }
