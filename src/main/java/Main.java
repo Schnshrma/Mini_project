@@ -7,7 +7,18 @@ public class Main {
         else
             return (n * factorial(n - 1));
     }
-
+    static double square_root(double n)
+    {
+        return Math.sqrt(n);
+    }
+    static double log(double n)
+    {
+        return Math.log(n);
+    }
+    static double power(double firstA,double firstB)
+    {
+       return Math.pow(firstA,firstB);
+    }
     public static void main(String[] args) {
         System.out.println();
         System.out.println();
@@ -27,7 +38,7 @@ public class Main {
                 case 1:
                     System.out.print("Enter the number for square root : ");
                     double first = reader.nextDouble();
-                    result = Math.sqrt(first);
+                    result = square_root(first);
                     System.out.println(" \n\n\n\nSquare root of " + first + " = " + result+"\n\n\n\n");
                     break;
 
@@ -41,7 +52,7 @@ public class Main {
                 case 3:
                     System.out.print("Enter the number for Log : ");
                     double first2 = reader.nextDouble();
-                    result = Math.log(first2);
+                    result = log(first2);
                     System.out.println(" \n\n\n\nLog of " + first2 + " = " + result+"\n\n\n\n");
                     break;
 
@@ -51,7 +62,7 @@ public class Main {
                     double firstA = reader.nextDouble();
                     System.out.print("Enter B : ");
                     double firstB = reader.nextDouble();
-                    result = Math.pow(firstA, firstB);
+                    result = power(firstA, firstB);
                     System.out.println("\n\n\n\n" + firstA + " ^ " + firstB + " = " + result+"\n\n\n\n");
                     break;
                 case 5:
