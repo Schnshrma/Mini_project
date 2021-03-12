@@ -1,1 +1,1 @@
-172.16.130.62 ansible_user=mars
+localhost ansible_user=earth
