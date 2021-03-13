@@ -53,8 +53,6 @@ public class Main {
         Main ob=new Main();
         System.out.println();
         System.out.println();
-        System.out.println();
-        System.out.println();
         System.out.println("Hello ..!");
         System.out.println("MINI PROJECT - CALCULATOR..!");
         Scanner reader = new Scanner(System.in);
